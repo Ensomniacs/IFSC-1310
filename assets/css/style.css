@@ -1,26 +1,33 @@
 @charset "utf-8";
 /* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
 body {
-	background: #F1F1F1 url(assets/img/background.png) fixed repeat top left;
-	color: #666 !important;
-	font: 9px verdana !important;
-	line-height: 200% !important;
+	background: #F1F1F1 url(https://ensomniacs.github.io/IFSC-1310/assets/img/background.png) fixed repeat top left;
+	color: #666;
+	font: 9px verdana;
+	line-height: 200%;
 }
 
+#main {
+	width:50vw;
+	top: 100px;
+	margin:35px auto;
+    margin-right: auto;
+    margin-left: auto;
+}
 .logo {
 	float: left;
     margin: 10px 20px 10px 20px;
     padding: 10px;
     width: 75px;
-    height: 100%;
+}
+.gallery {
+	width: 600px;
 }
 
-#main {
-	top: 100px;
-	left: 50%;
-	margin-left: -175px;
-	z-index: 9;
-}
 .box {
 	background: white;
 	width: 570px;
@@ -52,15 +59,15 @@ h1 {
 	margin: 0px;
 }
 h2 {
-	color: #999;
+	color: #ed6109;
 	font-family: verdana;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: normal;
+	border-left: 15px solid #ed6109;
+	padding-left: 15px; 
 	text-align: left;
-	padding: 0px;
 	text-transform: uppercase;
-	line-height: 100%;
-	margin: 0px 0px 15px 30px;
+	margin: 0px 0px 15px 5px;
 }
 
 a {
@@ -120,6 +127,55 @@ ul {
    text-decoration: none;     /*To overwrite jquery-ui.css*/
    font-weight: bold !important;
 }    
-a:focus{                                /*To handle that annoing border(chrome) when item is in focus*/
+a:focus{                        
  outline: none;   
+}
+
+/* The grid: columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #ed6109;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #ed6109;
+  font-size: 35px;
+  cursor: pointer;
 }

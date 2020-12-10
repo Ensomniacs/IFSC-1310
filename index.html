@@ -10,6 +10,8 @@
 <meta property="og:type" content="website">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/albery.css" type="text/css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
@@ -19,9 +21,7 @@
   </script>
 </head>
 <body>
-<div id="main" style="position: absolute;">
-<a name="top"></a>
-<section class="box">
+<section id="main" class="box">
 <img src="assets/img/logoSVG2.png" class="logo">
 <h1>Ensomniacs | Eli Brewer</h1>
 
@@ -61,8 +61,32 @@
   </div>
   <div id="tabs-4">
   <a href="segway/index.html"><h2>Segway Centaur</h2></a>
+<div class="row">
+  <div class="column">
+    <img src="assets/img/segway.gif" alt="Initial Design" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img_snow.jpg" alt="Modified" style="width:100%" onclick="myFunction(this);">
   </div>
 </div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
 </div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</div>
+</section>
 </body>
 </html>
