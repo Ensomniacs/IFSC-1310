@@ -1,31 +1,68 @@
 <html lang="en">
-<head>
-<meta cahrset="utf-8">
-
+    <head>
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 <title>IFSC 1310 | Eli Brewer</title>
 <meta name="description" content="Homepage for 1310" />
 <meta name="author" content="Eli Brewer" />
-<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+<meta property="og:site_name" content="ENSOMNIACS">
+<meta property="og:title" content="ENSOMNIACS">
+<meta property="og:url" content="http://ensomniacs.github.io/IFSC-1310/index.html">
+<meta property="og:type" content="website">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
 </head>
-
 <body>
-<h1>Eli Brewer</h1>
-<nav>
-    <ul>
+<div id="main" style="position: absolute;">
+<a name="top"></a>
+<section class="box">
+<img src="assets/img/logoSVG2.png" class="logo">
+<h1>Ensomniacs | Eli Brewer</h1>
+
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Web Design</a></li>
+    <li><a href="#tabs-2">Positioning Labs</a></li>
+    <li><a href="#tabs-3">Gravit Assignments</a></li>
+    <li><a href="#tabs-4">Segway Centaur</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>
+        <ul>
         <li><a href="gordo/index.html">Prototype HTML Assignemnt: Gordo</a></li>
         <li><a href="css-demo/index.html">CSS Demo</a></li>
         <li><a href="assets/img/Flexbox.png">Flexbox Froggy</a></li>
-        <li>Positioning lab</li>
-        <ul><li><a href="positioning-lab/float-1.html">Float 1</a></li>
+        </ul>
+    </p>
+  </div>
+  <div id="tabs-2">
+    <p>  <ul>
+        <li><a href="positioning-lab/float-1.html">Float 1</a></li>
         <li><a href="positioning-lab/float-2.html">Float 2</a></li>
         <li><a href="positioning-lab/absolute-1.html">Absolute 1</a></li>
         <li><a href="positioning-lab/absolute-2.html">Absolute 2</a></li>
         </ul>
-        <li>Gravit Assignments</li>
-        <ul><li><a href="assets/img/WebTechLogo.jpg">Logo Assignment</a></li>
-        <li><a href="assets/img/Bear1.jpg">Bear Image Edit</a></li></ul>
-        <li><a href="segway/index.html">Segway Centaur</a></li>
+        </ul>
+    </p>
+  </div>
+  <div id="tabs-3">
+    <p>
+        <ul>
+            <li><a href="assets/img/WebTechLogo.jpg">Logo Assignment</a></li>
+        <li><a href="assets/img/Bear1.jpg">Bear Image Edit</a></li>
     </ul>
-</nav>
+    </p>
+  </div>
+  <div id="tabs-4">
+  <a href="segway/index.html"><h2>Segway Centaur</h2></a>
+  </div>
+</div>
+</div>
 </body>
 </html>
