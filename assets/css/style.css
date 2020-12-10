@@ -70,6 +70,34 @@ h2 {
 	margin: 0px 0px 15px 5px;
 }
 
+ nav li{
+  list-style-type:none;
+  padding:0;
+}
+
+nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  padding:0;
+  max-width:900px;
+  margin:20px auto;
+}
+
+nav a:link, nav a:visited{
+  color:white;
+  text-decoration:none;
+  background-color: #ed6109;
+  background-color: rgba(237,97,9,.4);
+  padding:8px 16px;
+  border-radius: 20px;
+  transition:.6s;
+}
+
+nav a:hover, nav a:active{
+  background-color: rgba(237,97,9,.8);
+}
+
 a {
 	color: #333 !important;
 	font: 9px verdana !important;
@@ -77,7 +105,7 @@ a {
 	letter-spacing: 1px;
 }
 a:hover {
-	color: #666 !important;
+	color: #fff !important;
 }
 ul {
 	list-style-type: square;
@@ -134,7 +162,7 @@ a:focus{
 /* The grid: columns that floats next to each other */
 .column {
   float: left;
-  width: 25%;
+  width: 45%;
   padding: 10px;
 }
 

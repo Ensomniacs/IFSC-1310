@@ -60,13 +60,9 @@ body {
 /* ----- Responsive Images ---- */
 
 
-h1#headerimg {
-  width: 49px;
+.headerimg {  
   height: 85px;
-  background-image: url(img/segwaylogo.gif);
-}
-h1#headerimg span {
-  display: none;
+  margin: 10px;
 }
 
 /* ----- Global Styles ---- */

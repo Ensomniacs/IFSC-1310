@@ -40,9 +40,9 @@ html {
 
 /* ----- Responsive Images ---- */
 
-img {
-  max-width: 100%;
-  height: auto;
+.headerimg {  
+  height: 85px;
+  margin: 10px;
 }
 
 /* ----- Global Styles ---- */
@@ -329,6 +329,21 @@ blockquote > p > cite {
 /* ----- Responsive Images -----*/
 img {
     max-width:100%;
+}
+
+/* ----- Accordion Styling ----- */
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin: 2px 0 0 0;
+	padding: .5em .5em .5em .7em;
+	font-size: 100%;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	border-top: 0;
+	overflow: auto;
 }
 
 /* ----- Fit for Mobile -----*/
