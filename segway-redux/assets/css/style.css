@@ -58,13 +58,12 @@ body {
 }
 
 /* ----- Responsive Images ---- */
-
-
 .headerimg {  
   height: 85px;
   margin: 10px;
 }
 
+  
 /* ----- Global Styles ---- */
 /* ----- [dark to light]  ---- */
 
@@ -277,17 +276,26 @@ label {
 }
 
 .slider {
-  overflow: hidden;
+  overflow-y: scroll;
   max-height: 0;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.slider {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 input:checked+label {}
 
 input:checked+label+.slider {
-  max-height: 700px;
+  max-height: 900px;
   padding: 1px 0px 0px 0px;
 }
-
 
 
 /* ---- Attribute Selector ---- */
@@ -358,36 +366,11 @@ background-color: #232323;
   text-transform:uppercase;
 }
 
-
-table {
-  width:100%;
-  border: 1px solid #c0c0c0;
-  border-collapse: collapse;
-}
-
 caption {
   font-weight: bold;
   font-size: 1.5rem;
   border-bottom: 1px solid #c0c0c0;
   padding: 5px;
-}
-
-th {
-  background: #4E54BF;
-  color: #d3cefb;
-  text-align: left;
-  border-right: 1px solid #c0c0c0;
-  padding: 5px;
-}
-
-td {
-  border: 1px solid #c0c0c0;
-  padding: 5px;
-}
-
-
-dd + dt {
-  margin-top: 20px;
 }
 
 
@@ -411,3 +394,5 @@ img {
   header.primary nav ul li a{
     display:block;
   }
+  
+}
