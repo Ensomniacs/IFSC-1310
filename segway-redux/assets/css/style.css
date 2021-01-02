@@ -186,6 +186,7 @@ a:hover {
 	background: #232323;
 	color: #f7f7f7;
 }
+
 .segimg {
   background: url(img/centaur_sketch_lrg.jpg);
   height: 900px;
@@ -205,6 +206,9 @@ a:hover {
 .seginfo2 h1 {
   color: #83bad8;
   font-size: 2.0em;
+    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
 }
 .seginfo2 h2, .segimg2 h2 {

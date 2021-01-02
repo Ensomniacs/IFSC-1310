@@ -7,8 +7,7 @@
 body {
 	background: #F1F1F1 url(https://ensomniacs.github.io/IFSC-1310/assets/img/background.png) fixed repeat top left;
 	color: #666;
-	font: 9px verdana;
-	line-height: 200%;
+	font: 0.84em verdana;
 }
 
 #main {
@@ -68,6 +67,23 @@ h2 {
 	text-align: left;
 	text-transform: uppercase;
 	margin: 0px 0px 15px 5px;
+}
+
+h3 {
+	color: #83bad8;
+	font-family: verdana;
+	font-size: 20px;
+	font-weight: normal;
+	border-bottom: 2px solid #83bad8;
+	border-width: 5px;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0px 0px 15px 5px;
+}
+
+p {
+    margin-top: 10px;
+    text-indent: 25px;
 }
 
  nav li{
